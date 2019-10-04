@@ -1,0 +1,17 @@
+<?php
+
+if(isset($_POST['excluir'])){
+    //recupere o valor do cpf
+    $cpf=$_POST['cpf'];
+    $sql = ("DELETE FROM cliente Where cpf='$cpf'");
+}else{
+    //recupere os valores dos campos
+    //validação dos campos
+    if(isset($_POST['salvar'])){
+        //faça o INSERT
+    }else{
+       //faça o UPDATE
+    }
+}
+
+?>
